@@ -1,0 +1,17 @@
+<p>users works!</p>
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>User Name</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Phone</th>
+    </tr>
+    <tr *ngFor="let u of userResponse">
+        <td>{{ u.name }}</td>
+        <td>{{ u.username }}</td>
+        <td>{{ u.email }}</td>
+        <td>{{ u.address.street }} {{ u.address.city }}</td>
+        <td>{{ u.phone }}</td>
+    </tr>
+</table>
